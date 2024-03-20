@@ -1,9 +1,9 @@
 {
   "title": "陽菜 / Haruna ",
-  "description": "Minimal portfolio template",
+  "description": "Los Angeles based Model.",
   "base_url": "/",
   "keywords": ["astro", "template"],
   "logo": "assets/m.png",
-  "favicon": "assets/m_w.png",
+  "favicon": "assets/favicon.ico",
   "url": "/"
 }
