@@ -6,6 +6,12 @@ import { getEntry,getCollection } from "astro:content";
 const projectEntries = await getCollection("projects");
 const projects = projectEntries.sort((a,b)=>{return b.data.date - a.data.date});
 
+export function getStaticPaths() {
+  return [
+    {params: {slug: '01'}},
+  ];
+}
+
 const { slug } = Astro.params;
 
 if (slug === undefined) {
@@ -31,6 +37,8 @@ if(currentIndex < projects.length) {
 }
 
 const { Content } = await entry.render();
+
+
 ---
 
 <Layout title={entry.data.title}>
