@@ -1,0 +1,15 @@
+---
+import { Image } from 'astro:assets';
+
+const { slug, title, image, tags } = Astro.props;
+---
+
+<figure class="shrink-0 w-full relative">
+  <div class="relative">
+    <a href={`/project/${slug}`} class="no-underline relative block" aria-label={title}>
+      <span class="relative block transition duration-500 ease-in-out transform rounded hover:scale-105">
+        <Image width={384} class="relative block object-contain object-center w-full h-full" loading="lazy" alt={title} src={image}>
+      </span>
+    </a>
+  </div>
+</figure>
