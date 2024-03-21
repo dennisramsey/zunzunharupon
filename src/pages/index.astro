@@ -6,7 +6,16 @@ import Card from '../components/Card.astro';
 import Hero from '../components/Hero.astro';
 
 const allProjects = await getCollection('projects');
-const projects = allProjects.sort((a,b)=>{return b.data.date - a.data.date});
+const shuffledProjects = shuffleArray(allProjects);
+
+function shuffleArray(array) {
+  let shuffledArray = [...array];
+  for (let i = shuffledArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+  }
+  return shuffledArray;
+}
 ---
 
 <Layout title="Haruna.">
@@ -108,7 +117,7 @@ const projects = allProjects.sort((a,b)=>{return b.data.date - a.data.date});
       <div class="relative w-full mt-5 mb-10">
         <div class="clear-both relative">
           <div class="grid flex-wrap items-start grid-cols-1 gap-4 lg:grid-cols-3 md:grid-cols-2 portfolio gap-8 ">
-            {projects.map((project,index)=><Card index={index+1} slug={project.slug} title={project.data.title} image={project.data.image} tags={project.data.tag} />)}
+            {shuffledProjects.map((project,index)=><Card key={index} index={index+1} slug={project.slug} title={project.data.title} image={project.data.image} tags={project.data.tag} />)}
           </div>
         </div>
       </div>
