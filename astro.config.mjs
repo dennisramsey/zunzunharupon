@@ -10,5 +10,6 @@ export default defineConfig({
   image: {
     service: squooshImageService(),
   },
-  integrations: [tailwind(), sitemap(), robots()],
+  // integrations: [tailwind(), sitemap(), robots()],
+  integrations: [tailwind(), robots()],
 });

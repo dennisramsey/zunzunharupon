@@ -6,10 +6,11 @@ import { getEntry,getCollection } from "astro:content";
 const projectEntries = await getCollection("projects");
 const projects = projectEntries.sort((a,b)=>{return b.data.date - a.data.date});
 
-export function getStaticPaths() {
-  return [
-    {params: {slug: '01'}},
-  ];
+export async function getStaticPaths() {
+  const projectEntries = await getCollection("projects");
+  return projectEntries.map(entry => ({
+    params: { slug: entry.slug }
+  }));
 }
 
 const { slug } = Astro.params;
