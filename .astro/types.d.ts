@@ -203,30 +203,9 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"106.md": {
-	id: "106.md";
-  slug: "106";
-  body: string;
-  collection: "projects";
-  data: InferEntrySchema<"projects">
-} & { render(): Render[".md"] };
-"107.md": {
-	id: "107.md";
-  slug: "107";
-  body: string;
-  collection: "projects";
-  data: InferEntrySchema<"projects">
-} & { render(): Render[".md"] };
 "109.md": {
 	id: "109.md";
   slug: "109";
-  body: string;
-  collection: "projects";
-  data: InferEntrySchema<"projects">
-} & { render(): Render[".md"] };
-"111.md": {
-	id: "111.md";
-  slug: "111";
   body: string;
   collection: "projects";
   data: InferEntrySchema<"projects">
@@ -241,13 +220,6 @@ declare module 'astro:content' {
 "113.md": {
 	id: "113.md";
   slug: "113";
-  body: string;
-  collection: "projects";
-  data: InferEntrySchema<"projects">
-} & { render(): Render[".md"] };
-"114.md": {
-	id: "114.md";
-  slug: "114";
   body: string;
   collection: "projects";
   data: InferEntrySchema<"projects">
@@ -308,6 +280,55 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
+"123.md": {
+	id: "123.md";
+  slug: "123";
+  body: string;
+  collection: "projects";
+  data: InferEntrySchema<"projects">
+} & { render(): Render[".md"] };
+"124.md": {
+	id: "124.md";
+  slug: "124";
+  body: string;
+  collection: "projects";
+  data: InferEntrySchema<"projects">
+} & { render(): Render[".md"] };
+"125.md": {
+	id: "125.md";
+  slug: "125";
+  body: string;
+  collection: "projects";
+  data: InferEntrySchema<"projects">
+} & { render(): Render[".md"] };
+"126.md": {
+	id: "126.md";
+  slug: "126";
+  body: string;
+  collection: "projects";
+  data: InferEntrySchema<"projects">
+} & { render(): Render[".md"] };
+"127.md": {
+	id: "127.md";
+  slug: "127";
+  body: string;
+  collection: "projects";
+  data: InferEntrySchema<"projects">
+} & { render(): Render[".md"] };
+"128.md": {
+	id: "128.md";
+  slug: "128";
+  body: string;
+  collection: "projects";
+  data: InferEntrySchema<"projects">
+} & { render(): Render[".md"] };
+"129.md": {
+	id: "129.md";
+  slug: "129";
+  body: string;
+  collection: "projects";
+  data: InferEntrySchema<"projects">
+} & { render(): Render[".md"] };
 "17.md": {
 	id: "17.md";
   slug: "17";
@@ -357,13 +378,6 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"63.md": {
-	id: "63.md";
-  slug: "63";
-  body: string;
-  collection: "projects";
-  data: InferEntrySchema<"projects">
-} & { render(): Render[".md"] };
 "71.md": {
 	id: "71.md";
   slug: "71";
@@ -409,13 +423,6 @@ declare module 'astro:content' {
 "89.md": {
 	id: "89.md";
   slug: "89";
-  body: string;
-  collection: "projects";
-  data: InferEntrySchema<"projects">
-} & { render(): Render[".md"] };
-"91.md": {
-	id: "91.md";
-  slug: "91";
   body: string;
   collection: "projects";
   data: InferEntrySchema<"projects">
